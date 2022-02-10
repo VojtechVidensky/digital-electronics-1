@@ -1,4 +1,4 @@
-# Lab 1: Vojtech Vidensky
+# Lab 1: Vojtech Vidensky (230347)
 
 ### De Morgan's laws
 
