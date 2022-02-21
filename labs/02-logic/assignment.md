@@ -16,9 +16,11 @@
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
    Greater than: (SoP)
+   
    ![image](https://user-images.githubusercontent.com/99399676/155018163-0c38ee19-12ff-4d73-9e34-599967af0d70.png)
    
    Less than: (PoS)
+
    ![image](https://user-images.githubusercontent.com/99399676/155018223-bbedc888-9c6c-4d7d-8dc5-305e3984febf.png)
 
 
