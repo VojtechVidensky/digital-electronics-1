@@ -20,7 +20,7 @@ end architecture Behavioral;
 
 3. Link to your public EDA Playground example:
 
-   [Three-bit wide 4-to1 multiplexer - EDA]https://www.edaplayground.com/x/mchc
+   https://www.edaplayground.com/x/mchc
 
 4. Listing of pin assignments for the Nexys A7 board in `nexys-a7-50t.xdc`. **DO NOT list** the whole file, just your switch and LED settings.
 
