@@ -16,7 +16,7 @@ end architecture Behavioral;
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![EPWave_Multiplexer](Images/EPWave_Multiplexer.png)
+   ![image](https://user-images.githubusercontent.com/99399676/156145771-c30e1e03-8336-4615-a2e8-b3111e3b2fc9.png)
 
 3. Link to your public EDA Playground example:
 
