@@ -1,4 +1,4 @@
-# Lab 5: YOUR_FIRSTNAME LASTNAME
+# Lab 5: Vojtěch Vídenský
 
 ### Flip-flops
 
@@ -41,7 +41,7 @@ end architecture Behavioral;
 
 2. Screenshot with simulated time waveforms. Try to simulate both flip-flops in a single testbench with a maximum duration of 200 ns, including reset. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99399676/158434247-2b1a43cf-01ca-4834-97b7-6354689d8a78.png)
 
 ### Shift register
 
