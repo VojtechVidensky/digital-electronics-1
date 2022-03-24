@@ -1,4 +1,4 @@
-# Lab 7: YOUR_FIRSTNAME LASTNAME
+# Lab 7: Vojtěch Vídenský
 
 ### Display driver
 
@@ -44,7 +44,7 @@
 
 2. Screenshot with simulated time waveforms. Test reset as well. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![display driver](https://user-images.githubusercontent.com/99399676/159922454-3075ebe2-1fe9-4e44-ab0e-78c1fd241e5c.PNG)
+   ![display driver](https://user-images.githubusercontent.com/99399676/159923076-5051174f-003c-448b-a08d-34c7e7cb07df.PNG)
 
 ### Eight-digit driver
 
