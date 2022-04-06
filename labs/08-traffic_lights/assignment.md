@@ -4,7 +4,7 @@
 
 1. Figure of state diagram:
 
-   ![your figure]()
+   ![image](https://user-images.githubusercontent.com/99399676/162039775-e7d395d4-6e6a-475b-8f54-3ba1f20ac3ce.png)
 
 2. Listing of VHDL code of the completed process `p_traffic_fsm`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
