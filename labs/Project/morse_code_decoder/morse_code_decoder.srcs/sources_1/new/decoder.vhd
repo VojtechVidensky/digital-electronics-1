@@ -15,8 +15,8 @@ entity decoder is
         clk      : in  std_logic;  -- Main clock
         reset    : in  std_logic;  -- Synchronous reset
         input     : in  std_logic;  -- Enable input
-        cnt_o    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
-        char	 : out std_logic_vector(2 - 1 downto 0)
+        cnt_o    : in std_logic_vector(g_CNT_WIDTH - 1 downto 0);
+        char	 : out std_logic
     );
 end entity decoder;
 
@@ -26,22 +26,16 @@ end entity decoder;
 architecture behavioral of decoder is
 
     -- Local counter
-    signal s_cnt_local : unsigned(g_CNT_WIDTH - 1 downto 0);
-
-begin
+begin    
     decoder : process(input)
     begin
         if (input = '0') then
-        	if (s_cnt_local < "1111") then
-            	char <= "01";
-            elsif (s_cnt_local > "1111") then
-            	char <= "11";
+        	if (cnt_o < "1111") then
+            	char <= '0';
+            elsif (cnt_o > "1111") then
+            	char <= '1';
             end if;
-            s_cnt_local <= (others => '0');
         end if;
     end process decoder;
-
-    -- Output must be retyped from "unsigned" to "std_logic_vector"
-    cnt_o <= std_logic_vector(s_cnt_local);
-
+    
 end architecture behavioral;

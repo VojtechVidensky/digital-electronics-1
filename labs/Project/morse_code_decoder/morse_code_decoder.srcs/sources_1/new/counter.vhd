@@ -25,7 +25,6 @@ entity cnt_up_down is
         reset    : in  std_logic;  -- Synchronous reset
         input     : in  std_logic;  -- Enable input
         cnt_o    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0);
-        char	 : out std_logic_vector(2 - 1 downto 0)
     );
 end entity cnt_up_down;
 

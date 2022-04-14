@@ -31,20 +31,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity top is
-    Port ( BTNU : in STD_LOGIC;
-           BTNC : in STD_LOGIC;
-           SW : in STD_LOGIC;
-           LED : out STD_LOGIC_VECTOR (3 downto 0));
-end top;
+entity shift_register is
+    Port ( clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           shift_i : in STD_LOGIC);
+end shift_register;
 
-architecture Behavioral of top is
+architecture Behavioral of shift_register is
 
   -- Internal signals between flip-flops
   signal s_q_0 : std_logic;
   signal s_q_1 : std_logic;
   signal s_q_2 : std_logic;
   signal s_q_3 : std_logic;
+  signal s_q_4 : std_logic;
 
 begin
 
@@ -52,17 +52,17 @@ begin
   -- Four instances (copies) of D-type FF entity
   d_ff_0 : entity work.d_ff_rst
       port map(
-          clk   => BTNU,
-          rst   => BTNC,
-          d     => SW,
+          clk   => clk,
+          rst   => reset,
+          d     => shift_i,
           q     => s_q_0,
           q_bar => open
       );
 
   d_ff_1 : entity work.d_ff_rst
       port map(
-          clk   => BTNU,
-          rst   => BTNC,
+          clk   => clk,
+          rst   => reset,
           d     => s_q_0,
           q     => s_q_1,
           q_bar => open
@@ -70,8 +70,8 @@ begin
    
     d_ff_2 : entity work.d_ff_rst
       port map(
-          clk   => BTNU,
-          rst   => BTNC,
+          clk   => clk,
+          rst   => reset,
           d     => s_q_1,
           q     => s_q_2,
           q_bar => open
@@ -79,12 +79,20 @@ begin
        
       d_ff_3 : entity work.d_ff_rst
       port map(
-          clk   => BTNU,
-          rst   => BTNC,
+          clk   => clk,
+          rst   => reset,
           d     => s_q_2,
           q     => s_q_3,
           q_bar => open
       );
 
+      d_ff_4 : entity work.d_ff_rst
+      port map(
+          clk   => clk,
+          rst   => reset,
+          d     => s_q_3,
+          q     => s_q_4,
+          q_bar => open
+      );
 
 end architecture Behavioral;
