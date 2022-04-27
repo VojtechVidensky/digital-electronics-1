@@ -2,10 +2,10 @@
 
 ### Team members
 
-* Member 1 (responsible for xxx)
-* Member 2 (responsible for xxx)
-* Member 3 (responsible for xxx)
-* ...
+* Dočkal Tomáš (responsible for xxx)
+* Tran Minh Hieu (responsible for xxx)
+* Vadovič Samuel (responsible for xxx)
+* Vídenský Vojtěch (responsible for xxx)
 
 ### Table of contents
 
